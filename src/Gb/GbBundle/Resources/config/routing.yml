@@ -1,0 +1,3 @@
+GbBundle_homepage:
+    pattern:  /
+    defaults: { _controller: GbBundle:Default:index }

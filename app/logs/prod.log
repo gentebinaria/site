@@ -1,0 +1,1 @@
+[2011-09-10 20:39:52] request.ERROR: Symfony\Component\HttpKernel\Exception\NotFoundHttpException: No route found for "GET /src/Gb/GbBundle/Tests/Controller/DefaultControllerTest.php" (uncaught exception) at /home/webprojects/gentebinaria/vendor/symfony/src/Symfony/Bundle/FrameworkBundle/EventListener/RouterListener.php line 85 [] []

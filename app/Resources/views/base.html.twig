@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}{% endblock %} | GenteBinaria.com</title>
+  <meta name="description" content="{% block metadesc %}{% endblock %}" />
+
+  <link href="{{ asset('bundles/gb/css/reset.css') }}" rel="stylesheet" type="text/css" />
+  <link href="{{ asset('bundles/gb/css/960.css') }}" rel="stylesheet" type="text/css" />
+  <link href="{{ asset('bundles/gb/css/main.css') }}" rel="stylesheet" type="text/css" />
+
+  {% block stylesheets %}{% endblock %}
+
+  <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body id="{% block pageid '' %}">
+  <header>
+    <div class="container_16">
+    {% block header %}{% endblock %}
+    </div>
+  </header>
+  
+  <div class="container_16">
+    {% block body %}{% endblock %}
+
+    <footer>
+      {% block footer %}
+        footer
+      {% endblock %}
+    </footer>
+  </div>
+  {% block javascripts %}{% endblock %}
+</body>
+</html>
